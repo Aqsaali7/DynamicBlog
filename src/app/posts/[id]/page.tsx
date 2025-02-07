@@ -4,6 +4,7 @@ import { useParams } from "next/navigation";
 import Commentsection from "@/components/Commentsection";
 import AuthorCard from "@/components/AuthorCard";
 import Footer from "@/components/Footer";
+import Image from "next/image";
 
 // Sample posts array (you might fetch this data in a real app)
 const posts = [
@@ -76,7 +77,7 @@ export default function Post() {
             </h1>
 
             {post.image && (
-                <img
+                <Image
                     src={post.image}
                     alt={post.title}
                     className="w-full h-auto rounded-md mt-4"
