@@ -23,7 +23,7 @@ export default function Feature() {
                                 width={250}
                                 height={250}
                                 className="w-[250px] h-[250px] rounded"
-                                src="/images/mini-purse.webp"
+                                src="public/images/mini-purse.webp"
                                 alt="purse"
                             />,
                             <Image
@@ -31,7 +31,7 @@ export default function Feature() {
                                 width={250}
                                 height={250}
                                 className="w-[250px] h-[250px] rounded"
-                                src="/images/jacket-1.webp"
+                                src="public/images/jacket-1.webp"
                                 alt="jacket"
                             />,
                             <Image
@@ -39,7 +39,7 @@ export default function Feature() {
                                 width={250}
                                 height={250}
                                 className="w-[250px] h-[250px] rounded"
-                                src="/images/photo-1.jpg"
+                                src="public/images/photo-1.jpg"
                                 alt="accessories"
                             />,
                             <Image
@@ -47,7 +47,7 @@ export default function Feature() {
                                 width={250}
                                 height={250}
                                 className="w-[250px] h-[250px] rounded"
-                                src="/images/women-1.jpg"
+                                src="public/images/women-1.jpg"
                                 alt="women"
                             />,
                             <Image
@@ -55,7 +55,7 @@ export default function Feature() {
                                 width={250}
                                 height={250}
                                 className="w-[250px] h-[250px] rounded"
-                                src="/images/images-21.jpg"
+                                src="public/images/images-21.jpg"
                                 alt="makeup"
                             />,
                             <Image
@@ -63,7 +63,7 @@ export default function Feature() {
                                 width={250}
                                 height={250}
                                 className="w-[250px] h-[250px] rounded"
-                                src="/images/hijab1.jpg"
+                                src="public/images/hijab1.jpg"
                                 alt="hijab"
                             />
                         ].map((category, index) => (
