@@ -20,7 +20,7 @@ export default function BlogCard({ post , isDarkbackGround }: BlogCardProps) {
             
             <Image
             width={100}
-            height={192}
+            height={100}
                 src={post.ImageUrl}
                 alt={post.title}
                 className="w-full h-48 object-cover rounded-t-lg"
