@@ -5,10 +5,17 @@ import Commentsection from "@/components/Commentsection";
 import AuthorCard from "@/components/AuthorCard";
 import Footer from "@/components/Footer";
 import Image from "next/image";
-import { type } from "os";
+
+// Define the Post type with explicit field names (note the capitalization of 'Image')
+interface Post {
+    id: string;
+    title: string;
+    description: string;
+    Image: string; // This matches the property name in your posts array
+}
 
 // Sample posts array (you might fetch this data in a real app)
-const posts = [
+const posts: Post[] = [
     {
         id: '1',
         title: 'Barrel Leg Jeans & How To Wear Them',
@@ -48,14 +55,18 @@ const posts = [
 ];
 
 export default function Post() {
-    const { id } = useParams();
-    const [post, setPost] =  useState< any | null >(null);
+    // Explicitly define the type for the `id` parameter
+    const { id } = useParams<{ id: string }>();
 
-    // Find post based on ID when the component mounts or ID changes
+    // Set the `post` state to either a `Post` or `null`
+    const [post, setPost] = useState<Post | null>(null);
+
     useEffect(() => {
         if (id) {
+            // Find the post based on the `id`
             const foundPost = posts.find((p) => p.id === id);
-            setPost(foundPost);
+            // Set the `post` state, or `null` if not found
+            setPost(foundPost || null);
         }
     }, [id]);
 
@@ -63,6 +74,7 @@ export default function Post() {
         return <h2>Post not found</h2>;
     }
 
+    // Function to render paragraphs (if description contains line breaks)
     const renderParagraphs = (description: string) => {
         return description.split("\n").map((para, index) => (
             <p key={index} className="mt-4 text-justify">
@@ -77,9 +89,9 @@ export default function Post() {
                 {post.title}
             </h1>
 
-            {post.image && (
+            {post.Image && (
                 <Image
-                    src={post.image}
+                    src={post.Image} // Use Image (capital I) based on the data structure
                     alt={post.title}
                     className="w-full h-auto rounded-md mt-4"
                 />
@@ -95,61 +107,3 @@ export default function Post() {
         </div>
     );
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
