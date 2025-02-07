@@ -5,6 +5,7 @@ import Commentsection from "@/components/Commentsection";
 import AuthorCard from "@/components/AuthorCard";
 import Footer from "@/components/Footer";
 import Image from "next/image";
+import { type } from "os";
 
 // Sample posts array (you might fetch this data in a real app)
 const posts = [
@@ -48,7 +49,7 @@ const posts = [
 
 export default function Post() {
     const { id } = useParams();
-    const [post, setPost] =  useState<any>(null);
+    const [post, setPost] =  useState< any | null >(null);
 
     // Find post based on ID when the component mounts or ID changes
     useEffect(() => {
