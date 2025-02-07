@@ -90,7 +90,9 @@ export default function Post() {
             </h1>
 
             {post.Image && (
-                <Image
+                <Image 
+                width={250}
+                height={250}
                     src={post.Image} // Use Image (capital I) based on the data structure
                     alt={post.title}
                     className="w-full h-auto rounded-md mt-4"
