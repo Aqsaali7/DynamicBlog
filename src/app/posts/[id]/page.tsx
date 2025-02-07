@@ -48,7 +48,7 @@ const posts = [
 
 export default function Post() {
     const { id } = useParams();
-    const [post, setPost] = useState<any>(null);
+    const [post, setPost] =  useState<any>(null);
 
     // Find post based on ID when the component mounts or ID changes
     useEffect(() => {
