@@ -9,7 +9,7 @@ export default function AuthorCard() {
 width={64}
 height={64}
  className="w-16 h-16 rounded-full mr-4 object-cover border-2 border-red"
- src="../images/blog8.jpg"
+ src="/images/blog8.jpg"
  alt=""/>
  
 
