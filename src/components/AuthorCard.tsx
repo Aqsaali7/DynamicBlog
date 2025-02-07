@@ -23,7 +23,7 @@ height={64}
 
 
 <p className="mt-4 text-black leading-relaxed">
-Fashion is not just about clothes; it&apos;s a reflection of individuality, creativity, and passion. The love for fashion transcends mere trends and instead becomes an expression of one's personality, mood, and vision. For many, fashion is a form of art that enables them to experiment with colors, textures, and shapes, crafting a unique identity through their wardrobe choices. The passion for fashion is a deep-rooted drive that pushes individuals to explore, innovate, and inspire. It encourages confidence and allows people to communicate without words. From the first spark of creativity to the final ensemble, fashion passion is an ongoing journey of self-discovery, pushing boundaries and challenging norms, making it a powerful tool for self-expression.
+Fashion is not just about clothes; it&apos;s a reflection of individuality creativity and passion &rsquo; The love for fashion transcends mere trends and instead becomes an expression of one&apos;s personality mood and vision &rsquo; For many fashion is a form of art that enables them to experiment with colors textures and shapes crafting a unique identity through their wardrobe choices &rsquo; The passion for fashion is a deep-rooted drive that pushes individuals to explore innovate and inspire &rsquo; It encourages confidence and allows people to communicate without words &rsquo; From the first spark of creativity to the final ensemble fashion passion is an ongoing journey of self-discovery pushing boundaries and challenging norms making it a powerful tool for self-expression&rsquo;
 </p>
 
 <div className="mt-4 flex space-x-3"> 
