@@ -31,7 +31,7 @@ export default function Feature() {
                                 width={100}
                                 height={250}
                                 className="w-[250px] h-[250px] rounded"
-                                src="/images/jacket-1.jpg"
+                                src="image/images/jacket-1.jpg"
                                 alt="jacket"
                             />,
                             <Image
